@@ -1,0 +1,39 @@
+#!/bin/bash
+set -e
+# develop — print a ready-to-run shell snippet for SAMAY.
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+REPO_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+SAMAY_DIR="$REPO_DIR/samay"
+PYTHON_REQUIRED_PKGS="python3-gi libgtk-3-0 gir1.2-gtk-3.0 python3-cairo libnotify-bin libcanberra-gtk3-0"
+
+echo "## SAMAY dev shell"
+echo
+echo "Project root: $REPO_DIR"
+echo "SAMAY dir:   $SAMAY_DIR"
+echo
+echo "## 1. Install Linux runtime deps (one time, Debian/Ubuntu with sudo)"
+echo "   sudo apt-get update -qq"
+echo "   sudo apt-get install -y -qq $PYTHON_REQUIRED_PKGS"
+echo
+echo "## 2. Run SAMAY"
+echo "   python3 $SAMAY_DIR/main.py"
+echo
+echo "## 3. Or run as a module"
+echo "   python3 -m samay"
+echo
+echo "## 4. Install desktop integration (user scope)"
+echo '   cat > ~/.local/share/applications/samay.desktop <<EOF'
+echo "[Desktop Entry]"
+echo "Type=Application"
+echo "Name=Samay"
+echo "Comment=Galaxy Watch Style Desktop Clock"
+echo "Exec=python3 $SAMAY_DIR/main.py"
+echo "Icon=utilities-clock"
+echo "Categories=Utility;Clock;"
+echo "Terminal=false"
+echo "EOF"
+echo
+echo "## Notes"
+echo "  - SAMAY vendors requests/pytz/dateutil inside samay/vendor."
+echo "  - GTK 3 typelibs must be installed on the host (gir1.2-gtk-3.0)."
+echo "  - ~/.samay/ is used for alarms.json, world.json, countdown.json, laps.csv, calendar_cache.json."

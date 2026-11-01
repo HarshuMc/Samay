@@ -1,0 +1,54 @@
+/* SAMAY UI styling (GTK 3 CSS) */
+
+/* ---- Window chrome ---- */
+window#SamayWindow {
+  border-radius: 18px;
+  background-color: rgba(0,0,0,0);
+  padding: 0;
+}
+
+box#SamayMainWindow {
+  padding: 0;
+}
+
+/* ---- Top bar ---- */
+#SamayTopBar {
+  background-color: rgba(15,17,21,0.92);
+}
+
+/* ---- Opacity slider ---- */
+.samay-opacity-slider {
+  background-color: rgba(255,255,255,0.04);
+  color: #FFFFFF;
+}
+
+.samay-opacity-slider slider {
+  background-color: rgba(255,255,255,0.15);
+  color: #FFFFFF;
+}
+
+.samay-opacity-slider trough {
+  background-color: rgba(255,255,255,0.10);
+}
+
+/* ---- Sidebar ---- */
+#SamaySidebar {
+  background-color: rgba(20,22,28,0.85);
+}
+
+/* ---- Module content ---- */
+#SamayContent {
+  background-color: rgba(0,0,0,0);
+}
+
+/* ---- Helper classes ---- */
+.samay-card {
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 20px;
+}
+
+.samay-label {
+  color: #FFFFFF;
+  font-weight: 500;
+}

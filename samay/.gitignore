@@ -1,0 +1,28 @@
+# Vim
+*.swp
+*.swo
+*~
+.#*
+
+# macOS
+.DS_Store
+
+# Python bytecode
+__pycache__
+*.pyc
+*.pyo
+
+# Egg info / build artifacts
+*.egg-info
+build
+dist
+
+# Local run artifacts
+.samay
+.env
+.env.local
+*.log
+
+# Keep vendor but exclude caches
+vendor/__pycache__
+vendor/*.dist-info/*.pyc

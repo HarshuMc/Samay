@@ -1,0 +1,72 @@
+[
+  {
+    "date": "2026-01-26",
+    "name": "Republic Day",
+    "type": "national"
+  },
+  {
+    "date": "2026-03-05",
+    "name": "Holi",
+    "type": "festival"
+  },
+  {
+    "date": "2026-03-19",
+    "name": "Eid al-Fitr",
+    "type": "festival"
+  },
+  {
+    "date": "2026-04-01",
+    "name": "April Fools' Day",
+    "type": "observance"
+  },
+  {
+    "date": "2026-04-14",
+    "name": "Baisakhi",
+    "type": "festival"
+  },
+  {
+    "date": "2026-04-18",
+    "name": "Good Friday",
+    "type": "observance"
+  },
+  {
+    "date": "2026-05-01",
+    "name": "Labour Day",
+    "type": "observance"
+  },
+  {
+    "date": "2026-06-15",
+    "name": "Eid al-Adha",
+    "type": "festival"
+  },
+  {
+    "date": "2026-08-15",
+    "name": "Independence Day",
+    "type": "national"
+  },
+  {
+    "date": "2026-09-22",
+    "name": "Navratri Start",
+    "type": "festival"
+  },
+  {
+    "date": "2026-10-21",
+    "name": "Diwali",
+    "type": "festival"
+  },
+  {
+    "date": "2026-11-09",
+    "name": "Guru Nanak Jayanti",
+    "type": "festival"
+  },
+  {
+    "date": "2026-12-25",
+    "name": "Christmas",
+    "type": "festival"
+  },
+  {
+    "date": "2026-12-31",
+    "name": "New Year's Eve",
+    "type": "observance"
+  }
+]

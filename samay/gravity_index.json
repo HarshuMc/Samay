@@ -1,0 +1,6 @@
+{
+  "gtk3": {
+    "available": false,
+    "note": "GTK 3 typelibs are absent in this sandbox; require gir1.2-gtk-3.0 on the target desktop"
+  }
+}
